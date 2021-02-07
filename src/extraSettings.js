@@ -9,7 +9,7 @@ let extraScore = 1;
 let wuDi = false;
 
 // 第一个水果：修改数字为 0-10, 0 为葡萄，9 为半个西瓜
-let firstFruit = 0;
+let firstFruit = 7;
 
 // 水果合成反转：false 改为 true
 let reverseLevelUp = false;
@@ -29,7 +29,7 @@ let setFruits = {
 let fruitQTan = 0.6;
 
 // 让水果下落缓慢：false 改为大于 0 的任意数，值越大阻力越大，下落越慢（推荐 5）
-let fruitSlowDown = 9;
+let fruitSlowDown = Math.random() * 5;
 
 // 点击右上方图标更换水果：false 改为 true 即可
 let clickChangeFruit = true;
@@ -41,5 +41,5 @@ let adLink = false;
 document.getElementsByTagName("title")[0].innerText = '合成大西瓜';
 
 // 开启选分弹窗：将 false 改为 true
-let selectModal = true;
+let selectModal = false;
 
